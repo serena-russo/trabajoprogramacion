@@ -1,0 +1,32 @@
+body{background-color: black;}
+
+.estrella{color: white;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;}
+
+h2{color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 40px;}
+
+
+.parrafos{color: white; 
+    font-family: Arial, Helvetica, sans-serif;}
+
+
+.titulos{color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+font-size: 20px;}
+
+.aver{display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;}
+
+button{font-weight: bold;}
+
+.netflix{color: red;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;text-decoration: none ;}
+

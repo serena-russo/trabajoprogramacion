@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.netflix {
+    color: red;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.botonesheader{
+    border-color:red;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+h1 {
+    color: red;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.favoritos {
+    color: red;
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5%;
+}
+.containerfavoritos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.tutlofavs {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.contenedorpadreheader{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.ulfavs {
+    color: white;
+    list-style: none; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedorpadregeneros {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+}
+h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.ulgeneros {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.boton {
+        border-color:red;
+        border-width: 5px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        width: 10%;
+        height: 30px;
+} 
+
+.frase {
+    text-align:justify center;
+    color: red; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 50px;
+}
+.footer {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedorpadrefooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end; }

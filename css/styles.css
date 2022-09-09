@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-.hola {
+body {
     background-color: black;
 }
 .netflix {
@@ -15,18 +15,19 @@
     background-color: black;
     color: white;
     font-weight: bold;
+    text-decoration: none;
 }
 .generos {
-    color: red;
+    color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
 }
 .favoritos {
-    color: red;
+    color: white;
     text-align: center;
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 5%;
 }
 .containerfavoritos {
     display: flex;
@@ -35,10 +36,11 @@
     justify-content: space-around;
     margin-top: 2%;
 }
-.tutlofavs {
+.titulofavs {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    font-size: 30px;
 }
 .contenedorpadreheader{
     display:flex;
@@ -53,6 +55,7 @@
     color: white;
     list-style: none; 
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 .contenedorpadregeneros {
     display: flex;
@@ -60,10 +63,6 @@
     flex-direction: row; 
     justify-content: space-around;
     align-items: center;
-}
-h3 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif; 
 }
 .ulgeneros {
     color: white;
@@ -75,8 +74,9 @@ h3 {
         background-color: black;
         color: white;
         font-weight: bold;
-        width: 20%;
-        height: 50px;
+        width: 100px;
+        height: 40px; 
+        margin-bottom: 40px;
 } 
 
 .frase {
@@ -95,68 +95,58 @@ h3 {
     justify-content: flex-end;
     align-items: flex-end; 
 }
-.contenedordosinicio{display: flex;
+.contenedoresinicio { 
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
-.pelisnombreinicio{color: white;
+.pelisnombreinicio {
+    color: white;
     font-size: 17px;
     padding-left: 1%;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: bold;
 }
-.contenedortresinicio{display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-} 
-.contenedorcuatroinicio{display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.contenedorquintoinicio{display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.popularesinicio{color: white;
+.popularesinicio {
+    color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     text-decoration: unset;
+    font-weight: bold; 
 }
-
-.masvistoyvaloradas{color: white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-}
-.busqueda{color:black; background-color: white; border: black;
-}
-
-.estrella{color: white;
+.estrella {
+    color: white;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
     
-    h2{color: white;
+h2 { 
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 40px;
 }
-.agregarfav{font-weight: bold;
+.agregarfav {
+    font-weight: bold;
 }
-.parrafos{color: white; 
-    font-family: Arial, Helvetica, sans-serif;}
-
-
-.titulos{color: white;
+.parrafos { 
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulos { 
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-font-size: 20px;}
-.aver{display: flex;
+    font-size: 20px;
+}
+.aver {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;}
+    justify-content: space-between;
+}
+
 

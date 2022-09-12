@@ -1,15 +1,18 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     background-color: black;
 }
+
 .netflix {
     color: red;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
+
 .botonesheader{
     border-color:red;
     background-color: black;
@@ -17,18 +20,21 @@ body {
     font-weight: bold;
     text-decoration: none;
 }
+
 .generos {
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
 }
+
 .favoritos {
     color: white;
     text-align: center;
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .containerfavoritos {
     display: flex;
     flex-wrap: wrap;
@@ -36,12 +42,14 @@ body {
     justify-content: space-around;
     margin-top: 2%;
 }
+
 .titulofavs {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 30px;
 }
+
 .contenedorpadreheader{
     display:flex;
     flex-wrap: wrap;
@@ -51,12 +59,14 @@ body {
     padding-left: 4%;
     padding-right: 4%;
 }
+
 .ulfavs {
     color: white;
     list-style: none; 
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
 .contenedorpadregeneros {
     display: flex;
     flex-wrap: wrap;
@@ -64,10 +74,12 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
 .ulgeneros {
     color: white;
     font-family: Arial, Helvetica, sans-serif; 
 }
+
 .botongenero {
         border-color:red;
         border-width: 5px;
@@ -85,22 +97,26 @@ body {
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 50px;
 }
+
 .footer {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .contenedorpadrefooter{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end; 
 }
+
 .contenedoresinicio { 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
+
 .pelisnombreinicio {
     color: white;
     font-size: 17px;
@@ -117,6 +133,7 @@ body {
     text-decoration: unset;
     font-weight: bold; 
 }
+
 .estrella {
     color: white;
     font-size: 20px;
@@ -129,19 +146,23 @@ h2 {
     font-weight: bold;
     font-size: 40px;
 }
+
 .agregarfav {
     font-weight: bold;
 }
+
 .parrafos { 
     color: white; 
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .titulos { 
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
+
 .aver {
     display: flex;
     flex-wrap: wrap;
@@ -150,3 +171,30 @@ h2 {
 }
 
 
+
+.bodyss {
+    background-color: black;
+}
+
+.resultadobusqueda {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.cpinputsearch {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.peliculasyseries {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size:large;   
+}
+
+.resultadoserie {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+}

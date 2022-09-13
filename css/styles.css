@@ -28,6 +28,18 @@ body {
     font-size: 35px;
 }
 
+.titulogeneros {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titdetalle {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+
 .favoritos {
     color: white;
     text-align: center;

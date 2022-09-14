@@ -12,17 +12,35 @@
 
 <body class="bodyss">
 
-<section class="contenedorpadreheader">
-    <h1 class="netflix">NETFLIX</h1>
-    <article><button class="botonesheader"><a class="botonesheader" href="./index.html">INICIO</a></button></article>
-    <article><button class="botonesheader"><a class="botonesheader" href="./resenaseries.html">SERIES</a></button></article>
-    <article><button class="botonesheader"><a class="botonesheader" href="./resenapelis.html">PELICULAS</a></button></article>
-    <article><button class="botonesheader"><a class="botonesheader" href="./generos.html">GÉNEROS</a></button></article>
-    <article><button class="botonesheader"><a class="botonesheader" href="./favorite.html">FAVORITOS</a></button></article>
-    <form>
-    <input type="text" name="buscador" value="" placeholder="Buscar...">
-    <button class="botonesheader" type="submit">BUSCAR</button>
-</section>
+    <section class="contenedorpadreheader">
+        <h1 class="netflix">NETFLIX</h1>
+            
+        <form action="index.html" method="get">
+        <article><button class="botonesheader" type="submit"> INICIO</button></article>
+        </form>
+            
+        <form action="resenaseries.html" method="get">
+        <article><button class="botonesheader" type="submit">SERIES</button></article>
+        </form>
+            
+        <form action="resenapelis.html" method="get">
+        <article><button class="botonesheader" type="submit">PELICULAS</button></article>
+        </form>
+            
+        <form action="generos.html" method="get">
+        <article><button class="botonesheader" type="submit">GÉNEROS</button></article>
+        </form>
+            
+        <form action="favorite.html" method="get">
+        <article><button class="botonesheader" type="submit">FAVORITOS</button></article>
+        </form>
+            
+        <form action="search-results.html" method="get">
+        <input type="text" name="buscador" value="" placeholder="Buscar...">
+        <button class="botonesheader" type="submit">BUSCAR</button>
+        </form>
+    
+    </section>
 
 <h1 class="resultadobusqueda">Resultado de busqueda: SERIES </h1> 
 
@@ -55,6 +73,7 @@
     <article><a class="popularesinicio" href="./resenaseries.html"><img src="./img/5.5.png"> <p class="popularesinicio">La casa de papel (2021)</p></a></article>
 </section>
 
+<p class="leyenda">No se encontraron resultados</p>
 
 <footer class="contenedorpadrefooter">
     <p class="footer">Luciana Zeitune - Micaela Alvarez Molina - Serena Russo</p>

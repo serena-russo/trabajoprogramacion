@@ -10,37 +10,56 @@
 <body>
     <section class="contenedorpadreheader">
         <h1 class="netflix">NETFLIX</h1>
-        <article><button class="botonesheader"><a class="botonesheader" href="index.html">INICIO</a></button></article>
-        <article><button class="botonesheader"><a class="botonesheader" href="resenaseries.html">SERIES</a></button></article>
-        <article><button class="botonesheader"><a class="botonesheader" href="resenapelis.html">PELICULAS</a></button></article>
-        <article><button class="botonesheader"><a class="botonesheader" href="generos.html">GÉNEROS</a></button></article>
-        <article><button class="botonesheader"><a class="botonesheader" href="favorite.html">FAVORITOS</a></button></article>
-        <form>
+            
+        <form action="index.html" method="get">
+        <article><button class="botonesheader" type="submit"> INICIO</button></article>
+        </form>
+            
+        <form action="resenaseries.html" method="get">
+        <article><button class="botonesheader" type="submit">SERIES</button></article>
+        </form>
+            
+        <form action="resenapelis.html" method="get">
+        <article><button class="botonesheader" type="submit">PELICULAS</button></article>
+        </form>
+            
+        <form action="generos.html" method="get">
+        <article><button class="botonesheader" type="submit">GÉNEROS</button></article>
+        </form>
+            
+        <form action="favorite.html" method="get">
+        <article><button class="botonesheader" type="submit">FAVORITOS</button></article>
+        </form>
+            
+        <form action="search-results.html" method="get">
         <input type="text" name="buscador" value="" placeholder="Buscar...">
         <button class="botonesheader" type="submit">BUSCAR</button>
-        </section>
+        </form>
+    
+    </section>
 
     <h1 class="favoritos">FAVORITOS</h1> 
     <section class="containerfavoritos">
        <article class="item peliculas">
         <h2 class="titulofavs">Peliculas</h2>
             <ul class="ulfavs">
-                <li>Misterio a bordo</li> 
+                <li>★ Misterio a bordo </li> 
                 <img src="./img/misterioabordo.png" alt="Misterio a bordo">
-                <li>Tiburon</li>
+                <li>★ Tiburon </li>
                 <img src="./img/tiburon.png" alt="Tiburon">
-                <li>El sorprendente Hombre Araña</li>
+                <li>★ El sorprendente Hombre Araña </li>
                 <img src="./img/hombrearaña.png" alt="Hombre Araña">
             </ul>
        </article> 
+
        <article class="item series"> 
         <h2 class="titulofavs">Series</h2>
         <ul class="ulfavs">
-            <li>You</li>
+            <li>★ You</li>
             <img src="./img/you.png" alt="You">
-            <li>Atypical</li>
+            <li>★ Atypical</li>
             <img src="./img/atypical.png" alt="Atypical">
-            <li>Sky Rojo</li>
+            <li>★ Sky Rojo</li>
             <img src="./img/skyrojo.png" alt="Sky Rojo">
         </ul>
        </article>

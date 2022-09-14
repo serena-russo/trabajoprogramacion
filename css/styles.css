@@ -51,8 +51,7 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    border-style: solid;
-    border-color: red;
+
 }
 
 .pdetalle {
@@ -112,6 +111,7 @@ body {
 .ulgeneros {
     color: white;
     font-family: Arial, Helvetica, sans-serif; 
+
 }
 
 .botongenero {
@@ -231,4 +231,23 @@ h2 {
 .resultadoserie {
     color: white;
     font-family: Arial, Helvetica, sans-serif; 
+}
+
+.cpgeneros {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bgeneros{
+    background-color: red;
+    color:white;
+    font-weight: bold;
+    font-size: 22px;
+    size: 30px;
+}
+
+.generos {
+    text-align: left;
 }

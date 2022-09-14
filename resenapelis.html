@@ -10,16 +10,33 @@
 <body>
     <section class="contenedorpadreheader">
         <h1 class="netflix">NETFLIX</h1>
-        <article><button class="botonesheader"><a class="botonesheader" href="index.html">INICIO</a></button></article>
-        <article><button class="botonesheader"><a class="botonesheader" href="resenaseries.html">SERIES</a></button></article>
-        <article><button class="botonesheader"><a class="botonesheader" href="resenapelis.html">PELICULAS</a></button></article>
-        <article><button class="botonesheader"><a class="botonesheader" href="generos.html">GÉNEROS</a></button></article>
-        <article><button class="botonesheader"><a class="botonesheader" href="favorite.html">FAVORITOS</a></button></article>
-        <form>
+            
+        <form action="index.html" method="get">
+        <article><button class="botonesheader" type="submit"> INICIO</button></article>
+        </form>
+            
+        <form action="resenaseries.html" method="get">
+        <article><button class="botonesheader" type="submit">SERIES</button></article>
+        </form>
+            
+        <form action="resenapelis.html" method="get">
+        <article><button class="botonesheader" type="submit">PELICULAS</button></article>
+        </form>
+            
+        <form action="generos.html" method="get">
+        <article><button class="botonesheader" type="submit">GÉNEROS</button></article>
+        </form>
+            
+        <form action="favorite.html" method="get">
+        <article><button class="botonesheader" type="submit">FAVORITOS</button></article>
+        </form>
+            
+        <form action="search-results.html" method="get">
         <input type="text" name="buscador" value="" placeholder="Buscar...">
         <button class="botonesheader" type="submit">BUSCAR</button>
-        
-        </section>
+        </form>
+    
+    </section>
 
 <h2>TOP GUN</h2>
 <p class="estrella">★★★★☆ Calificacion: 4.4</p>
@@ -53,7 +70,9 @@
 
 <br>
 
-<button>AGREGAR A FAVORITOS</button>
+<form action="favorite.html" method="get">
+    <article><button class="agregarfav" type="submit">AGREGAR A FAVORITOS</button></article>
+    </form>
 
 <footer class="contenedorpadrefooter">
     <p class="footer">Luciana Zeitune - Micaela Alvarez Molina - Serena Russo</p>

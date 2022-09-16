@@ -3,84 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = “viewport” content = "width = device-width, initial-scale = 1">
     <title>Document</title>
     <link href="./css/styles.css" rel="stylesheet">
 </head>
-<body>
-    <section class="contenedorpadreheader">
-        <h1 class="netflix">NETFLIX</h1>
-            
-        <form action="index.html" method="get">
-        <article><button class="botonesheader" type="submit"> INICIO</button></article>
-        </form>
-            
-        <form action="resenaseries.html" method="get">
-        <article><button class="botonesheader" type="submit">SERIES</button></article>
-        </form>
-            
-        <form action="resenapelis.html" method="get">
-        <article><button class="botonesheader" type="submit">PELICULAS</button></article>
-        </form>
-            
-        <form action="generos.html" method="get">
-        <article><button class="botonesheader" type="submit">GÉNEROS</button></article>
-        </form>
-            
-        <form action="favorite.html" method="get">
-        <article><button class="botonesheader" type="submit">FAVORITOS</button></article>
-        </form>
-            
-        <form action="search-results.html" method="get">
+<header class="contenedorpadreheader">
+    <h1 class="netflix">NETFLIX</h1>
+    <ul class="hola">
+        <li><a class="botonesheader" href="./index.html">INICIO</a></li>
+        <li><a class="botonesheader" href="./resenaseries.html">SERIES</a></li>
+        <li><a class="botonesheader" href="./resenapelis.html">PELICULAS</a></li>
+        <li><a class="botonesheader" href="./generos.html">GÉNEROS</a></li>
+        <li><a class="botonesheader" href="./favorite.html">FAVORITOS</a></li>
+    </ul>
+    <form action="search-results.html" method="get">
         <input type="text" name="buscador" value="" placeholder="Buscar...">
-        <button class="botonesheader" type="submit">BUSCAR</button></article>
-        </form>
-    
-    </section>
-<br>
+        <button class="botonesheader" type="submit">BUSCAR</button>
+    </form>
+</header>
+
 <h2 class="generos">Géneros peliculas: </h2>
     <section class="cpgeneros">
+        <ul class="ulgeneros">
+            <li><a class="bgeneros" href="./detallegeneros.html">COMEDIA</a></li>
+            <li><a class="bgeneros" href="./detallegeneros.html">ACCION</a></li>
+            <li><a class="bgeneros" href="./detallegeneros.html">AVENTURA</a></li>
+            <li><a class="bgeneros" href="./detallegeneros.html">POLICIAL</a></li>
+        </ul>
 
-    <form action="detallegeneros.html" method="get">
-        <article><button class="bgeneros" type="submit"> COMEDIA</button></article>
-        </form>
-
-    <form action="detallegeneros.html" method="get">
-        <article><button class="bgeneros" type="submit"> ACCION</button></article>
-         </form>
-
-    <form action="detallegeneros.html" method="get">
-        <article><button class="bgeneros" type="submit"> AVENTURA</button></article>
-        </form>
-
-    <form action="detallegeneros.html" method="get">
-        <article><button class="bgeneros" type="submit"> POLICIAL</button></article>
-        </form>
 </section>
 
-<br>
-<br>
-<br>
+
 <h3 class="generos">Géneros series:</h3>
 <section class="cpgeneros">
-
-<form action="detallegeneros.html" method="get">
-    <article><button class="bgeneros" type="submit"> CIENCIA FICCION</button></article>
-    </form>
-
-<form action="detallegeneros.html" method="get">
-    <article><button class="bgeneros" type="submit"> TERROR</button></article>
-    </form>
-
-<form action="detallegeneros.html" method="get">
-    <article><button class="bgeneros" type="submit"> AMOR</button></article>
-    </form>
-
-<form action="detallegeneros.html" method="get">
-    <article><button class="bgeneros" type="submit"> DRAMA</button></article>
-    </form>
+    <ul class="ulgeneros">
+        <li><a class="bgeneros" href="./detallegeneros.html">CIENCIA FICCION</a></li>
+        <li><a class="bgeneros" href="./detallegeneros.html">TERROR</a></li>
+        <li><a class="bgeneros" href="./detallegeneros.html">AMOR</a></li>
+        <li><a class="bgeneros" href="./detallegeneros.html">DRAMA</a></li>
+    </ul>
 
 </section>
+
+<footer class="contenedorpadrefooter">
+    <p class="footer">Luciana Zeitune - Micaela Alvarez Molina - Serena Russo</p>
+</footer>
     
 </body>
 </html>

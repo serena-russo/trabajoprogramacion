@@ -1,24 +1,63 @@
 * {
     box-sizing: border-box;
-}
+} 
 
 body {
     background-color: black;
 }
 
-.netflix {
+h1 {
     color: red;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
+.contenedorpadreheader{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+}
 
 .botonesheader{
-    border-color:red;
+    border: 3px solid red;
     background-color: black;
     color: white;
     font-weight: bold;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.hola {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hola li{
+    margin: 10px;
+}
+
+.ulgeneros {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.ulgeneros li {
+        margin: 30px;
+}
+
+.bgeneros {
+    text-decoration: none ;
 }
 
 .generos {
@@ -83,15 +122,6 @@ body {
     font-size: 30px;
 }
 
-.contenedorpadreheader{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 4%;
-    padding-right: 4%;
-}
 
 .ulfavs {
     color: white;
@@ -106,12 +136,6 @@ body {
     flex-direction: row; 
     justify-content: space-around;
     align-items: center;
-}
-
-.ulgeneros {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif; 
-
 }
 
 .botongenero {
@@ -149,6 +173,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    margin: 30px;
 }
 
 .pelisnombreinicio {
@@ -158,6 +183,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     font-weight: bold;
+
 }
 .popularesinicio {
     color: white;
@@ -167,6 +193,7 @@ body {
     text-decoration: unset;
     font-weight: bold; 
 }
+
 
 .estrella {
     color: white;
@@ -202,12 +229,6 @@ h2 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-}
-
-
-
-.bodyss {
-    background-color: black;
 }
 
 .resultadobusqueda {
@@ -251,3 +272,41 @@ h2 {
 .generos {
     text-align: left;
 }
+
+.imagenes {
+    width: 200px;
+}
+
+.imghombre {
+    width: 200px;
+}
+
+@media (max-width: 1500px) {
+    img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .imagenes{        
+        width: 70%;
+    }
+    .imghombre {
+        width: 70%;
+    }
+    .pelisnombreinicio {
+        padding-left: 4% ;
+        padding-top: 1%;
+    }
+}
+
+@media (max-width: 420px) {
+    
+    .contenedorpadreheader {
+        align-items: center;
+    }
+    .buscador {
+        padding-top: 5%;
+    }
+} 
+

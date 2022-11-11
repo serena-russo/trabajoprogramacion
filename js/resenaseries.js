@@ -1,0 +1,1 @@
+let urltv = `https://api.themoviedb.org/3/tv/${id}?api_key=cd221d9b379938868090204c71bbef7e&language=en-US`

@@ -16,7 +16,7 @@ fetch (urlindex1)
         todas_las_peliculas += `<article class="nomesale imagenes">
         <img src="https://image.tmdb.org/t/p/w500${index_peliculas[i].poster_path}" alt="${index_peliculas[i].title}">
         <h3 class = "sereprobando"><a href=detail-movie.htl?id=${index_peliculas[i].id}">${index_peliculas[i].title}</a></h3>
-        <p class="releaseDate">${index_peliculas[i].release_date}
+        <p class="release_date">${index_peliculas[i].release_date}
         </article> `
     }
     hola.innerHTML = todas_las_peliculas
@@ -37,9 +37,9 @@ fetch (urlindex2)
     for (let i=0; i<10; i++) {
         console.log(index_peliculas2[i]);
         todas_las_peliculas2 += `<article class="nomesale imagenes">
-        <img src="https://image.tmdb.org/t/p/w500${index_peliculas2[i].poster_path}" alt="${index_peliculas2[i].title}">
-        <h3 class ="sereprobando"><a href=detail-movie.htl?id=${index_peliculas2[i].id}">${index_peliculas2[i].title}</a></h3>
-        <p class="releaseDate">${index_peliculas2[i].release_date}
+        <img src="https://image.tmdb.org/t/p/w500${index_peliculas2[i].poster_path}" alt="${index_peliculas2[i].name}">
+        <h3 class ="sereprobando"><a href=detail-movie.htl?id=${index_peliculas2[i].id}">${index_peliculas2[i].name}</a></h3>
+        <p class="first_air_date">${index_peliculas2[i].first_air_date}</p>
         </article> `
     }
     hola2.innerHTML = todas_las_peliculas2
@@ -60,9 +60,9 @@ fetch (urlindex3)
     for (let i=0; i<10; i++) {
         console.log(index_peliculas3[i]);
         todas_las_peliculas3 += `<article class="nomesale imagenes">
-        <img src="https://image.tmdb.org/t/p/w500${index_peliculas3[i].poster_path}" alt="${index_peliculas3[i].title}">
-        <h3 class = "sereprobando"><a href=detail-movie.htl?id=${index_peliculas3[i].id}">${index_peliculas3[i].title}</a></h3>
-        <p class="releaseDate">${index_peliculas3[i].release_date}
+        <img src="https://image.tmdb.org/t/p/w500${index_peliculas3[i].poster_path}" alt="${index_peliculas3[i].name}">
+        <h3 class = "sereprobando"><a href=detail-movie.htl?id=${index_peliculas3[i].id}">${index_peliculas3[i].name}</a></h3>
+        <p class="first_air_date"">${index_peliculas3[i].first_air_date}</p>
         </article> `
     }
     hola3.innerHTML = todas_las_peliculas3

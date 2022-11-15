@@ -285,6 +285,21 @@ h2 {
     display: none;
 }
 
+.release_date {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.first_air_date {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.sereprobando {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
 @media (max-width: 1500px) {
     img {
         width: 100%;

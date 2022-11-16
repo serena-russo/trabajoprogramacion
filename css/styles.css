@@ -159,13 +159,17 @@ h1 {
 .footer {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-end;
 }
 
 .contenedorpadrefooter{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end; 
+    justify-content: space-between;
+}
+
+.logomdb {
+    width: 200px;
 }
 
 .contenedoresinicio { 
@@ -298,10 +302,6 @@ h2 {
 .sereprobando {
     color: white;
     font-family: Arial, Helvetica, sans-serif; 
-}
-
-.logomdb {
-    width: 150px;
 }
 
 

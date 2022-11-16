@@ -300,6 +300,11 @@ h2 {
     font-family: Arial, Helvetica, sans-serif; 
 }
 
+.logomdb {
+    width: 150px;
+}
+
+
 @media (max-width: 1500px) {
     img {
         width: 100%;

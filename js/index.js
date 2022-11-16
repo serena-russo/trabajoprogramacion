@@ -15,7 +15,7 @@ fetch (urlindex1)
         console.log(index_peliculas[i]);
         todas_las_peliculas += `<article class="nomesale imagenes">
         <img src="https://image.tmdb.org/t/p/w500${index_peliculas[i].poster_path}" alt="${index_peliculas[i].title}">
-        <h3 class = "sereprobando"><a href=detail-movie.htl?id=${index_peliculas[i].id}">${index_peliculas[i].title}</a></h3>
+        <h3><a href=detail-movie.htl?id=${index_peliculas[i].id}">${index_peliculas[i].title}</a></h3>
         <p class="release_date">${index_peliculas[i].release_date}
         </article> `
     }

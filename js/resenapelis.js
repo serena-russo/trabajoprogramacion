@@ -4,6 +4,11 @@ let id = query_a_oliteral.get("id") //obtengo el id de la propiedad del objeto l
 
 let urlresenapelis = `https://api.themoviedb.org/3/movie/${id}?api_key=cd221d9b379938868090204c71bbef7e&language=en-US`
 
+let favoritos = []
+
+let boton = document.querySelector('.agregarfav') 
+
+let recuperoStorage = localStorage.getItem('favoritos')
 
 
 fetch (urlresenapelis)
@@ -53,5 +58,30 @@ fetch (urldondever)
         })
     .catch(function(error){
           console.log("el error es" + error);
+      })
+
+
+      if (recuperoStorage != null) {
+        favoritos = JSON.parse(recuperoStorage)
+    }
+
+    if (favoritos.includes(id)) {
+        botonagregarfav.innerText= "Quitar de favoritos"
+    }
+
+      boton.addEventListener('click', function(){
+        if (favoritos.includes(id)) {
+            let indice = favoritos.indexOf(id);
+            favoritos.splice(indice, 1)
+            boton.innerText = 'Agregar a favoritos';
+        } else {
+            favoritos.push(id); 
+            boton.innerText = 'Quitar de favoritos';
+        }
+
+        let favsToString = JSON.stringify (favoritos) 
+        localStorage.setItem('favoritos', favsToString)
+
+        console.log(localStorage)
       })
     

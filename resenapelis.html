@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name = “viewport” content = "width = device-width, initial-scale = 1">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css"> 
+    <link rel="stylesheet" href="./styles.css"> 
 </head>
 
 <body>
@@ -20,18 +20,18 @@
             <li><a class="botonesheader" href="./favorite.html">FAVORITOS</a></li>
         </ul>
         <form action="search-results.html" method="get">
-            <input type="text" name="buscador" value="" placeholder="Buscar...">
+            <input class="inputboton" type="text" name="buscador" value="" placeholder="Buscar...">
             <button class="botonesheader" type="submit">BUSCAR</button>
         </form>
     </header>
 
-<h2 class="titulopelidetalle"> </h2>
+<h2 class="titulopelidetalle"></h2> 
 <p class="estrella calificacionapi"></p>
 
+
 <section class="aver">
-<div><img src="" class="glitch"></div>
+<div class="imagenapi1"><img src="https://image.tmdb.org/t/p/w500/" alt="" class="imagenapi"></div>
 <div>
-    
     <h2 class="titulos">SINOPSIS</h2>
     <p class="parrafos sinopsisapi"></p>
 </div>
@@ -39,26 +39,25 @@
 </section>
 
 
-<p class="parrafos fecheestrenoapi"></p>
+<p class="parrafos fechaestrenoapi"></p>
+<p class="parrafos duracion"></p>
 <p class="parrafos generoapi"></p>
 
 
 
-<h4 class="titulos">PELICULAS</h4>
-<p class="parrafos"> </p>
+<h4 class="titulos">DONDE VER</h4>
+<p class="parrafos dondever"> </p>
 
 
 <form action="favorite.html" method="get">
     <article><button class="agregarfav" type="submit">AGREGAR A FAVORITOS</button></article>
     </form>
 
-    <footer class="contenedorpadrefooter">
-        <p class="footer">Luciana Zeitune - Micaela Alvarez Molina - Serena Russo</p>
-        <img class ="logomdb" src="./img/logomdb.svg">
-    </footer>
+<footer class="contenedorpadrefooter">
+    <p class="footer">Luciana Zeitune - Micaela Alvarez Molina - Serena Russo</p>
+</footer>
 
-<script src="./resenapelis.html"></script>
-<script src = "./js/formulario.js"></script>
-    
+
+<script src="./resenapelis.js"></script>
 </body>
 </html>

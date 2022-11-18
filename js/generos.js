@@ -4,8 +4,8 @@ let urlmovie = `https://api.themoviedb.org/3/genre/movie/list?${api_key}=cd221d9
 let urltv = `https://api.themoviedb.org/3/genre/tv/list?${api_key}=cd221d9b379938868090204c71bbef7e&language=en-US`
 
 //capturamos elementos
-let seccionGeneros= document.querySelector(".cpgeneros")
-let seccionGenerosSeries= document.querySelector(".cpgeneros")
+let seccionGeneros= document.querySelector(".pelis7")
+let seccionGenerosSeries= document.querySelector(".series7")
 
 
 /* fetch de los generos peliculas*/

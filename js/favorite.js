@@ -25,7 +25,7 @@ else{
                 console.log(data)
 
                 peliculasFavs +=  `<li class="popularesinicio">
-                <a href="./resenapelis.html?idPelicula=${data.id}"><img class="imagenes" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt=" ${data.title}"   
+                <a href="resenapelis.html?id=${data.id}"><img class="imagenes" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt=" ${data.title}"   
                     height="250px">
                     <ul class="lista_anidada">
                         <li class="popularesinicio"> ${data.title} </li>
@@ -57,11 +57,11 @@ if (favorite == null || favorite.length == 0) {
             .then(function (data) {
                 console.log(data)
                 seriesFavs +=  `<li class="popularesinicio">
-                <a href="./resenaseries.html?idPelicula=${data.id}"><img class="imagenes" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt=" ${data.title}"   
+                <a href="./resenaseries.html?id=${data.id}"><img class="imagenes" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt=" ${data.name}"   
                     height="250px">
                     <ul class="lista_anidada">
-                        <li class="popularesinicio"> ${data.title} </li>
-                        <li class="popularesinicio"> Estreno: ${data.release_date} </li>
+                        <li class="popularesinicio"> ${data.name} </li>
+                        <li class="popularesinicio"> Estreno: ${data.first_air_date} </li>
                         <li class="popularesinicio"> Ver más </li>
                     </ul> </a> 
             </li>`

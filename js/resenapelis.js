@@ -61,7 +61,7 @@ fetch (urldondever)
       })
 
 
-      if (recuperoStorage != null) {
+    if (recuperoStorage != null) {
         favoritos = JSON.parse(recuperoStorage)
     }
 
@@ -84,4 +84,26 @@ fetch (urldondever)
 
         console.log(localStorage)
       })
-    
+
+
+let urlrecomendaciones = `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=cd221d9b379938868090204c71bbef7e&language=en-US&page=1`
+    fetch (urlrecomendaciones)
+        .then(function(response){
+              return response.json();
+        })
+        .then(function(data){
+            console.log(data)
+            indice_peliculas = data.results
+            let recomendadas = []
+            let capturo = document.querySelector(".recomendaciones")
+
+            for(let i=0;i<5;i++){
+            console.log(indice_peliculas[i])
+            recomendadas += `<section class="perro recomendaciones">
+            <img class="imagenes" src="https://image.tmdb.org/t/p/w500${indice_peliculas[i].poster_path}" alt="${indice_peliculas[i].title}">
+            <h3 class ="sereprobando"><a href= "resenapelis.html?id=${indice_peliculas[i].id}">${indice_peliculas[i].title}</a></h3>
+            <p class="first_air_date">${indice_peliculas[i].release_date}</p>
+            </section> `
+        }
+        capturo.innerHTML = recomendadas
+        })

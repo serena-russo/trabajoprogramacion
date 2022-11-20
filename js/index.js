@@ -46,7 +46,7 @@ fetch (urlindex2)
 })
  
 //Lo mas valorado en series
-let urlindex3 = "https://api.themoviedb.org/3/tv/top_rated?api_key=cd221d9b379938868090204c71bbef7e&language=en-US&page=1"
+let urlindex3 = "https://api.themoviedb.org/3/tv/popular?api_key=cd221d9b379938868090204c71bbef7e&language=en-US&page=1"
 fetch (urlindex3)
 .then (function(res){
     return res.json();
@@ -57,11 +57,11 @@ fetch (urlindex3)
     let hola3 = document.querySelector(".gato")
     let todas_las_peliculas3 = []
    
-    for (let i=0; i<10; i++) {
+    for (let i=10; i<20; i++) {
         console.log(index_peliculas3[i]);
         todas_las_peliculas3 += `<article class="nomesale imagenes">
         <img src="https://image.tmdb.org/t/p/w500${index_peliculas3[i].poster_path}" alt="${index_peliculas3[i].name}">
-        <h3 class = "sereprobando"><a href= "resenapelis.html?id=${index_peliculas3[i].id}">${index_peliculas3[i].name}</a></h3>
+        <h3 class = "sereprobando"><a href= "resenaseries.html?id=${index_peliculas3[i].id}">${index_peliculas3[i].name}</a></h3>
         <p class="first_air_date"">${index_peliculas3[i].first_air_date}</p>
         </article> `
     }

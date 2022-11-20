@@ -3,6 +3,11 @@ let query_a_oliteral = new URLSearchParams(infoquery) //creo un objeto litera co
 let id = query_a_oliteral.get("id") //obtengo el id de la propiedad del objeto literal
 
 let urlseries = `https://api.themoviedb.org/3/tv/${id}?api_key=cd221d9b379938868090204c71bbef7e&language=en-US`
+let favoritos = []
+
+let boton = document.querySelector('.agregarfav') 
+
+let recuperoStorage = localStorage.getItem('favoritos')
 
 fetch (urlseries)
     .then(function(response){
@@ -51,6 +56,53 @@ fetch (urldondever)
     .catch(function(error){
         console.log("el error es" + error);
     })
-    
+    if (recuperoStorage != null) {
+        favoritos = JSON.parse(recuperoStorage)
+    }
+
+    if (favoritos.includes(id)) {
+        botonagregarfav.innerText= "Quitar de favoritos"
+    }
+
+      boton.addEventListener('click', function(){
+        if (favoritos.includes(id)) {
+            let indice = favoritos.indexOf(id);
+            favoritos.splice(indice, 1)
+            boton.innerText = 'Agregar a favoritos';
+        } else {
+            favoritos.push(id); 
+            boton.innerText = 'Quitar de favoritos';
+        }
+
+        let favsToString = JSON.stringify (favoritos) 
+        localStorage.setItem('favoritos', favsToString)
+
+        console.log(localStorage)
+      })
+
+
+
+    let urlrecomendaciones = `https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=cd221d9b379938868090204c71bbef7e&language=en-US&page=1`
+    fetch (urlrecomendaciones)
+        .then(function(response){
+              return response.json();
+        })
+        .then(function(data){
+            console.log(data)
+            indice_peliculas = data.results
+            let recomendadas = []
+            let capturo = document.querySelector(".recomendaciones")
+
+            for(let i=0;i<5;i++){
+            console.log(indice_peliculas[i])
+            recomendadas += `<section class="perro recomendaciones">
+            <img class="imagenes" src="https://image.tmdb.org/t/p/w500${indice_peliculas[i].poster_path}" alt="${indice_peliculas[i].name}">
+            <h3 class ="sereprobando"><a href= "resenaseries.html?id=${indice_peliculas[i].id}">${indice_peliculas[i].name}</a></h3>
+            <p class="first_air_date">${indice_peliculas[i].first_air_date}</p>
+            </section> `                
+            
+        }
+        capturo.innerHTML = recomendadas
+        })
 
 

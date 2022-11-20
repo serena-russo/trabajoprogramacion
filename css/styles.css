@@ -305,6 +305,13 @@ h2 {
     font-family: Arial, Helvetica, sans-serif; 
 }
 
+.recomendadas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 
 
 @media (max-width: 1500px) {

@@ -15,14 +15,58 @@ let h2Peliculas = document.querySelector(".otroclass1")
 let h2Series = document.querySelector(".otroclass2")
 
 
-//Fetch del generos peliculas
+//Fetch de generos peliculas
 fetch (urldiscovermovie) 
 .then(function(res){
     return res.json()
 })
 .then(function(data){
-    console.log(data);
-    let index_peliculas = data.results
+    console.log(data.results);
+    let peliculas = data.results;
+    if (peliculas.length > 0){
+        let contenido = ""
+        for (let i = 0; i<5; i++){
+            contenido += ` falta aca 
+            
+            
+            
+            
+            
+            `
+        };
+        lista_generos_peliculas.innerHTML = contenido;
+    } else {
+        lista_generos_peliculas.innerHTML = `<h2> No hay peliculas para el genero seleccionado</h2>`
+    }    
+})
+.catch(function(error){
+    return error
+})
 
+
+//Fetch de generos series 
+fetch(urldiscovertv)
+.then(function(res){
+    return res.json()
+})
+.then (function(data) {
+    console.log(data.results)
+    let series = data.results;
+    if (series.length > 0) {
+        let contenido2 = ""
+        for (let i = 0; i <5; i++) {
+            contenido2 += `falta aca 
+            
+            
+            
+            `
+        };
+        lista_generos_serie.innerHTML = contenido2;
+    } else {
+    lista_generos_serie.innerHTML = `<h2> No hay series para el genero seleccionado </h2>`
+    }
+})
+.catch(function(error){
+    return error
 })
 

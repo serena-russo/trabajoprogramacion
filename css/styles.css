@@ -58,7 +58,9 @@ h1 {
 }
 
 .bgeneros {
-    text-decoration: none ;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .generos {

@@ -3,12 +3,12 @@ let api_key = "cd221d9b379938868090204c71bbef7e";
 let urlmovie = `https://api.themoviedb.org/3/genre/movie/list?api_key=cd221d9b379938868090204c71bbef7e&language=en-US`
 let urltv = `https://api.themoviedb.org/3/genre/tv/list?api_key=cd221d9b379938868090204c71bbef7e&language=en-US`
 
-//capturamos elementos
+//Capturamos elementos
 let seccionGeneros= document.querySelector(".pelis7")
 let seccionGenerosSeries= document.querySelector(".series7")
 
 
-/* fetch de los generos peliculas*/
+//* Fetch de los generos peliculas*//
 fetch(urlmovie)
 .then(function (respuesta) {
     return respuesta.json()
@@ -33,7 +33,7 @@ fetch(urlmovie)
 })
 
 
-/* fetch de los generos series*/
+//* Fetch de los generos series*//
 fetch(urltv)
 .then(function (respuesta) {
     return respuesta.json()

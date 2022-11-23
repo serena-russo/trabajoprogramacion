@@ -41,7 +41,7 @@ fetch (urlindex2)
         console.log(index_peliculas2[i]);
         todas_las_peliculas2 += `<article class="imagenes">
         <img src="https://image.tmdb.org/t/p/w500${index_peliculas2[i].poster_path}" alt="${index_peliculas2[i].name}">
-        <h3 class ="sereprobando"><a href= "resenaseries.html?id=${index_peliculas2[i].id}">${index_peliculas2[i].name}</a></h3>
+        <h3><a href= "resenaseries.html?id=${index_peliculas2[i].id}">${index_peliculas2[i].name}</a></h3>
         <p class="first_air_date">${index_peliculas2[i].first_air_date}</p>
         </article> `
     }
@@ -67,7 +67,7 @@ fetch (urlindex3)
         console.log(index_peliculas3[i]);
         todas_las_peliculas3 += `<article class="imagenes">
         <img src="https://image.tmdb.org/t/p/w500${index_peliculas3[i].poster_path}" alt="${index_peliculas3[i].name}">
-        <h3 class = "sereprobando"><a href= "resenaseries.html?id=${index_peliculas3[i].id}">${index_peliculas3[i].name}</a></h3>
+        <h3><a href= "resenaseries.html?id=${index_peliculas3[i].id}">${index_peliculas3[i].name}</a></h3>
         <p class="first_air_date"">${index_peliculas3[i].first_air_date}</p>
         </article> `
     }
